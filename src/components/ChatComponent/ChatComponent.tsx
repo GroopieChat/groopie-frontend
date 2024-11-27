@@ -177,7 +177,7 @@ const ChatComponent = (props: ChatComponentProps) => {
             onKeyDown={handleKeyDown}
           ></textarea>
           <div className="mt-auto">
-            <Button className="defaultAppColor" onClick={sendButtonClicked}>
+            <Button className="defaultAppColor sendButton" onClick={sendButtonClicked}>
               Send
             </Button>
           </div>

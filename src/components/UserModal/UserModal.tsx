@@ -193,7 +193,7 @@ export function UserModal(props: Props) {
           <Modal.Header className="align-items-start" closeButton>
             <div className="d-flex flex-column">
               <Modal.Title className="text-break">
-                {props.user.nickname}
+                {props.user.anonymous ? props.user.nickname : props.user.username}
               </Modal.Title>
             </div>
           </Modal.Header>
@@ -354,7 +354,7 @@ export function UserModal(props: Props) {
           className="my-modal"
         >
           <Modal.Header closeButton>
-            <Modal.Title>{props.user.nickname}</Modal.Title>
+            <Modal.Title>{props.user.username}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="d-flex flex-column align-items-center">
             <input
@@ -375,7 +375,7 @@ export function UserModal(props: Props) {
               onChange={handleChangeImage}
             />
             <img
-              className="userAvatarDefault userAvatarDefault"
+              className="userAvatar userAvatarDefault"
               src={props.user.avatar}
               onClick={handleAvatarClicked}
             ></img>

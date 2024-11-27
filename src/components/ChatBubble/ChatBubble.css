@@ -5,12 +5,15 @@
     word-break: break-all;
     max-width: 80%;
     align-self: flex-end;
+
+    @media (max-width: 1050px) {
+        padding: 10px 11px;
+    };
 }
 
 .you {
     color: var(--dark);
     background-color: var(--col-chat-you);
-    margin-top: 10px;
 }
 
 .others {
@@ -40,13 +43,17 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
+
+    @media (max-width: 1050px) {
+        height: 35px;
+        width: 35px;
+        };
 }
 
 .othersWrapper {
     display: flex;
     align-items: end;
     gap: 5px;
-    margin-top: 10px;
 }
 
 @keyframes slideFromLeft {

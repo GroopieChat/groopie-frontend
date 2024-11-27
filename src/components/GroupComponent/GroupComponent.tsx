@@ -135,10 +135,10 @@ const ChatComponent = (props: GroupComponentProps) => {
       <div
         className={props.is_mobile ? "leftContainerMobile" : "leftContainer"}
       >
-        <div className="settingsDiv align-items-center mb-2">
+        <div className="settingsDiv align-items-center">
           <div>
             <Button
-              className="defaultAppColor"
+              className="defaultAppColor settingsButton"
               onClick={() => {
                 setShowNewGroupModal(true);
               }}
@@ -148,7 +148,7 @@ const ChatComponent = (props: GroupComponentProps) => {
           </div>
           <div>
             <Button
-              className="defaultAppColor"
+              className="defaultAppColor settingsButton"
               onClick={() => {
                 setShowJoinGroupModal(true);
               }}
