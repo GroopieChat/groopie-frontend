@@ -8,6 +8,10 @@
     scrollbar-width: none;  /* Firefox */
     border-radius: 3vh;
     gap: 10px;
+
+    @media (max-width: 1050px) {
+        padding: 10px;
+      };
 }
 
 .leftContainerMobile {
@@ -35,6 +39,11 @@
     margin-left: auto;
     border-radius: 50%;
     width: 60px;
+
+    @media (max-width: 1050px) {
+        width: 50px;
+    };
+    
 }
 
 .accountSettingsIcon:hover{
@@ -47,4 +56,10 @@
     position: sticky;
     gap: 10px;
     top: 0;
+}
+
+.settingsButton {
+    @media (max-width: 1050px) {
+        font-size: small !important;
+    };
 }
