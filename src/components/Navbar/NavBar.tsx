@@ -9,7 +9,7 @@ interface MobileProps {
 const NavBar = (props: MobileProps) => {
   if (props.is_mobile) {
     return (
-      <nav className=" defaultAppColorNoHover p-2">
+      <nav className="defaultAppColorNoHover p-2">
         <div className="navbarGridMobile">
           <img
             className="mainLogo ms-1 align-self-center"
@@ -32,7 +32,7 @@ const NavBar = (props: MobileProps) => {
     
   } else {
     return (
-      <nav className="navbar fixed-top navbar-dark defaultAppColorNoHover p-1">
+      <nav className="navbar myNavbar fixed-top navbar-dark defaultAppColorNoHover p-1">
         <div className="navbarGrid">
           <img
             className="mainLogo ms-3 align-self-center"

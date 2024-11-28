@@ -103,9 +103,3 @@
 .backIcon:hover {
   filter: brightness(80%);
 }
-
-.sendButton {
-  @media (max-width: 1050px) {
-    font-size: small !important;
-};
-}

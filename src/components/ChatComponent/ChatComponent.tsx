@@ -61,6 +61,11 @@ const ChatComponent = (props: ChatComponentProps) => {
   const sendButtonClicked = (e: React.MouseEvent) => {
     e.preventDefault();
     clearAndSend();
+    if(textAreaRef != null && textAreaRef.current != null)
+    {
+      textAreaRef.current.focus();
+      window.scrollTo(0, 0);
+    }
   }
 
   const container = useRef<HTMLDivElement>(null);
@@ -168,6 +173,7 @@ const ChatComponent = (props: ChatComponentProps) => {
         <div className="sendMessageDiv">
           <textarea
             className="form-control shadow-none"
+            autoFocus={!props.is_mobile}
             id="message-text"
             onChange={handleChange}
             ref={textAreaRef}
