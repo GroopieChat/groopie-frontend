@@ -28,3 +28,10 @@
 {
     height: 40px;
 }
+
+.myNavbar {
+    @media (max-width: 1050px) {
+        display: none !important;
+      };
+
+}
