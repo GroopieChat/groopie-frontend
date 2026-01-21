@@ -18,7 +18,7 @@ export const LoginPageMobile = () => {
     const startup = async () => {
       const authenticated = await isAuthenticated();
       if (authenticated) {
-        navigate("/groopie/chat");
+        navigate("/chat");
         return;
       }
     }
